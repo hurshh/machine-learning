@@ -30,5 +30,14 @@ regressor.fit(x_train, y_train)
 
 y_pred = regressor.predict(x_test)
 np.set_printoptions(precision=2)
-print(np.concatenate((y_pred.reshape(len(y_pred), 1), (y_test.reshape(len(y_pred), 1))), 1))
+# print(np.concatenate((y_pred.reshape(len(y_pred), 1), (y_test.reshape(len(y_pred), 1))), 1))
+
+# getting values for custom profit
+
+print(regressor.predict([[1, 0, 0, 160000, 130000, 300000]]))
+
+# get equation for linear regression
+
+print(regressor.coef_)
+print(regressor.intercept_)
 
