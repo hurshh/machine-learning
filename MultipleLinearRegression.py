@@ -40,4 +40,3 @@ print(regressor.predict([[1, 0, 0, 160000, 130000, 300000]]))
 
 print(regressor.coef_)
 print(regressor.intercept_)
-
